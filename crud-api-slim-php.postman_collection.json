@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "c2bf0e44-1d35-4aa4-88a1-dd5f65fd63fc",
+		"name": "crud-api-slim-php",
+		"description": "This is collection for crud-slim-app-php\n@author Muhammad Cholis Malik <mcholismalik.official@gmail.com>",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:1234/user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:1234/user",
+					"host": [
+						"localhost"
+					],
+					"port": "1234",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1234/user/{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:1234/user/1",
+					"host": [
+						"localhost"
+					],
+					"port": "1234",
+					"path": [
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1234/user/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Name\" : \"Aisyah\",\n\t\"Address\" : \"Jl. Papua barat\",\n\t\"Status\" : 1\n}"
+				},
+				"url": {
+					"raw": "localhost:1234/user/1",
+					"host": [
+						"localhost"
+					],
+					"port": "1234",
+					"path": [
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1234/user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Name\" : \"Malik\",\n\t\"Address\" : \"Jl. Pegangsaan dua\",\n\t\"Status\" : 1\n}"
+				},
+				"url": {
+					"raw": "localhost:1234/user",
+					"host": [
+						"localhost"
+					],
+					"port": "1234",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1234/user/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:1234/user/1",
+					"host": [
+						"localhost"
+					],
+					"port": "1234",
+					"path": [
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "e94be737-14ad-4345-90d8-4a570ba01078",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "c4fec129-1556-4375-85ae-212d3c69183d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

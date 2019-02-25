@@ -1,0 +1,17 @@
+# Note: see https://httpd.apache.org/docs/current/howto/htaccess.html:
+#
+# "You should avoid using .htaccess files completely if you have access to
+# httpd main server config file. Using .htaccess files slows down your Apache
+# http server. Any directive that you can include in a .htaccess file is
+# better set in a Directory block, as it will have the same effect with
+# better performance."
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
+
+#php_value max_input_vars 3000
+#php_value suhosin.get.max_vars 3000
+#php_value suhosin.post.max_vars 3000
+#php_value suhosin.request.max_vars 3000
