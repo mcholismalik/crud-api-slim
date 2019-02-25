@@ -44,6 +44,11 @@ return [
         ]
     ]
 ];
+?>
+```
 
+### Credits
+
+Copyright 2019 by Muhammad Cholis Malik <mcholismalik.official@gmail.com>
 
 
