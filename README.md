@@ -12,15 +12,15 @@ This is simple CRUD API with slim framework.
 
 For local development you may run PHP's built-in web server:
 
-	`php -S localhost:1234`
+	php -S localhost:1234
 
 Test the script by opening the following URL:
 
-	`http://localhost:1234`
+	http://localhost:1234
 
 If you wanna use postman, import this collection :
 
-	`crud-api-slim-php.postman_collection.json
+	crud-api-slim-php.postman_collection.json
 
 Don't forget to modify the configuration at the bottom of the file.
 
