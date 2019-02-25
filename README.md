@@ -27,6 +27,23 @@ Don't forget to modify the configuration at the bottom of the file.
 ## Configuration
 
 Edit the following lines in the bottom of the file "`config/settings.php`":
+```php
+<?php
+return [
+    "settings" => [
+        "displayErrorDetails" => TRUE,
+        "db" => [
+            "driver" => 'mysql',
+            "host" => 'localhost',
+            "username" => 'root',
+            "password" => '',
+            "database" => 'crud-api-slim-php',
+            "charset" => 'utf8',
+            "collation" => 'utf8_unicode_ci',
+            "prefix" => ''
+        ]
+    ]
+];
 
 
 
